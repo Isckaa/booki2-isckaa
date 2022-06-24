@@ -1,0 +1,20 @@
+chien    	<i class="fa-solid fa-dog"></i> 
+
+coeur  	<i class="fa-solid fa-heart"></i>
+
+billet 	<i class="fa-solid fa-money-bill-wave"></i>
+
+info   	<i class="fa-solid fa-circle-info"></i>
+
+location 	<i class="fa-solid fa-location-dot"></i>
+
+étoile 	<i class="fa-solid fa-star"></i>
+
+personne	<i class="fa-solid fa-child-reaching"></i>
+
+loupe 	<i class="fa-solid fa-magnifying-glass"></i>
+
+
+&#8364 euro 
+
+&Eacute;  é majuscule
