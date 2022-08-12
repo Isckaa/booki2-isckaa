@@ -439,12 +439,10 @@ a{
 .about{
     display: flex;
     flex-direction: column;
-   
 }
 .quality-charter{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
 .help{
     display: flex;
