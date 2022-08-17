@@ -9,6 +9,12 @@ body{
     font-family: Raleway, serif;
 }
 
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
 
 
 /* Centrage et limitation de la largeur de la fenêtre */
@@ -52,6 +58,7 @@ nav{
 }
 nav a{
     border-top: 2px solid #F2F2F2;
+    width: 200px;
     padding: 28px;
 
 }
@@ -144,6 +151,7 @@ i{
     height: 47px;
     border-radius: 50px;
     gap : 10px;
+    
 }
 .bar i{
     display: flex;
@@ -275,9 +283,7 @@ i{
     opacity: 0.3;
     display: flex;
 }
-.card a{
-    text-decoration: none;
-}
+
 
 
 
@@ -435,6 +441,9 @@ a{
     color: black;
     margin: 5px;
     font-size: smaller;
+}
+a:hover{
+    text-decoration: underline;
 }
 .about{
     display: flex;
