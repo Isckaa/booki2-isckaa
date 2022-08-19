@@ -9,12 +9,13 @@ body{
     font-family: Raleway, serif;
 }
 
-a{
+a, a:visited, a:hover, a:link{
     text-decoration: none;
+    color: black;
+    margin: 5px;
+    font-size: smaller;
 }
-a:hover{
-    text-decoration: none;
-}
+
 
 
 /* Centrage et limitation de la largeur de la fenêtre */
@@ -53,18 +54,21 @@ a:hover{
 
 /*liens de navigation*/
 
-nav{
-    padding-top: 30px;
+nav{  
+    width: 370px;
+    display: flex;
 }
 nav a{
     border-top: 2px solid #F2F2F2;
-    width: 200px;
     padding: 28px;
-
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 nav a:hover{
     color: #0065fc;
-    border-top: 2px solid #0065fc;  
+    border-top: 2px solid #0065fc; 
+    text-decoration: none;   
 }
 
 
@@ -142,16 +146,22 @@ i{
     font-weight: bold;
     margin-top: 30px;
 }
-.bar a{
+
+.bar{
     display: flex;
     flex-direction: row;
     align-items: center;
     border: 2px solid #F2F2F2;
-    border-left: 0;
     height: 47px;
     border-radius: 50px;
     gap : 10px;
-    
+    transition : transform 0.2s ease-in-out,
+                 background-color 0.2s ease-in-out;
+}
+.bar:hover{
+    background-color: #DEEBFF;
+    border : 2px solid #DEEBFF;
+    transform : scale(1.05);
 }
 .bar i{
     display: flex;
@@ -242,7 +252,11 @@ i{
     border: 1px;
     border-radius: 15px;
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
-    overflow: hidden; 
+    overflow: hidden;
+    transition : transform 0.2s ease-in-out;
+}
+.card-hosting:hover{
+    transform:scale(1.05);
 }
 .card-image-hosting{
     border-radius: 12px 12px 0px 0px;
@@ -266,7 +280,9 @@ i{
 .card-hosting i{
     font-size: smaller;
 }
-
+.card-hosting a:hover{
+    text-decoration: none;
+}
 
 
 /*base de toutes les cartes*/
@@ -283,6 +299,7 @@ i{
     opacity: 0.3;
     display: flex;
 }
+
 
 
 
@@ -313,10 +330,15 @@ i{
     display: flex;
     width: 240px;
     margin: 15px;
+    padding : 5px;
     background-color: rgb(248, 246, 246);
     border: 2px;
     border-radius: 15px;
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);   
+    transition : transform 0.2s ease-in-out;
+}
+.card-populars:hover{
+    transform:scale(1.05);
 }
 .card-populars i{
     font-size: smaller;
@@ -325,8 +347,6 @@ i{
     width: 100px;
     height: 100px;
     border-radius: 12px 0 0 12px; 
-    margin: 0;
-    padding: 0;
     float: left;   
     overflow: hidden;
     object-fit: cover;
@@ -335,6 +355,7 @@ i{
     height: 100px;
     display: flex; 
     flex-wrap: wrap;
+    
 }
 .card-content-populars h3{
     font-size: small;
@@ -344,6 +365,9 @@ i{
 .card-content-populars p{
     font-size: x-small;
     margin: 6px;
+}
+.card-content-populars a{
+    text-decoration: none;
 }
 
 
@@ -372,7 +396,12 @@ i{
     border-radius: 15px;
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
     margin: 5px;
+    transition : transform 0.2s ease-in-out;
 }
+.card-activities:hover{
+    transform:scale(1.05);
+}
+
 .card-activities-photofull img{
     border-radius: 15px 15px 0 0;
     width: 100%;
@@ -428,7 +457,6 @@ i{
     background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
-    gap: 130px;
     padding: 30px;
     margin-top: 30px;
 }
@@ -437,25 +465,18 @@ i{
     margin-bottom: 15px;
     font-size: medium;
 }
-a{
+.footer a{
     color: black;
     margin: 5px;
     font-size: smaller;
 }
-a:hover{
+.footer a:hover{
     text-decoration: underline;
 }
-.about{
+.footer .category{
     display: flex;
     flex-direction: column;
-}
-.quality-charter{
-    display: flex;
-    flex-direction: column;  
-}
-.help{
-    display: flex;
-    flex-direction: column;
+    width : 33%;
 }
 
 
@@ -653,9 +674,11 @@ a:hover{
     }
     /*footer*/
     .footer{
-        height: auto;
-        display: flex;
         flex-direction: column;
+        gap: 30px;
+    }
+    .footer .category {
+        width : auto;
     }
     footer h3{
         margin-top: 30px;
